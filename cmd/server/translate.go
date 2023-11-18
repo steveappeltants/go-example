@@ -11,7 +11,7 @@ func translate(msg string) string {
 	for _, char := range msg {
 		if unicode.IsLetter(char) {
 			switch char {
-			case 'a', 'e', 'i', 'o', 'u', 'y', 'å', 'ä', 'ö':
+			case 'a', 'e', 'i', 'o', 'u', 'y':
 				b.WriteRune(char)
 			default:
 				b.WriteRune(char)
