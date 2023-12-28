@@ -1,0 +1,4 @@
+$ docker build --tag=go-example .
+$ docker run --name=go-example --rm --detach go-example
+$ docker exec -it go-example /bin/client
+$ docker stop go-example
